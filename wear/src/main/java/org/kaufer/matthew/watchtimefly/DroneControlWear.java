@@ -55,7 +55,44 @@ public class DroneControlWear extends Activity {
         addListener(altitudeDescend, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d("move","descend");
+            }
+        });
 
+        addListener(altitudeAscend, new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Log.d("move","ascend");
+            }
+        });
+        addListener(pitchBackwards, new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Log.d("move","pitch back");
+            }
+        });
+        addListener(pitchForwards, new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Log.d("move","pitch forwards");
+            }
+        });
+        addListener(kill, new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Log.d("move","pause");
+            }
+        });
+        addListener(takeoff, new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Log.d("move","takeoff");
+            }
+        });
+        addListener(land, new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Log.d("move","land");
             }
         });
     }

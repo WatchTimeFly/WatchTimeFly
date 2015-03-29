@@ -5,6 +5,8 @@
         <item name="android:layout_width">50dp</item>
         <item name="android:layout_height">50dp</item>
         <item name="android:radius">10dp</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:background">@drawable/round_button</item>
     </style>
 

@@ -57,7 +57,9 @@
             android:id="@+id/pitchForwards"
             style="@style/ControlButton"
             android:layout_alignTop="@+id/pitchBackwards"
-            android:layout_toEndOf="@+id/kill" />
+            android:layout_toEndOf="@+id/kill"
+            android:textSize="24dp"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="50dp"
