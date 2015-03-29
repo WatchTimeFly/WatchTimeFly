@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ControlButton">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:radius">10dp</item>
+        <item name="android:background">@drawable/round_button</item>
+    </style>
+
+    <style name="KillButton" parent="ControlButton">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:radius">10dp</item>
+        <item name="android:background">@drawable/round_kill_button</item>
+    </style>
+
+</resources>

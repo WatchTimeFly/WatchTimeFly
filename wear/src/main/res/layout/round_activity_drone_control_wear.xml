@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#333"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:text="Kill"
+            android:id="@+id/button"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            style="@style/KillButton" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="↶"
+            android:id="@+id/yawLeft"
+            android:layout_gravity="left|center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="false"
+            style="@style/ControlButton" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="↷"
+            android:id="@+id/yawRight"
+            android:layout_gravity="left|center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            style="@style/ControlButton" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="↟"
+            android:id="@+id/altitudeClimb"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            style="@style/ControlButton" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="↡"
+            android:id="@+id/altitudeDescend"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            style="@style/ControlButton" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="↗"
+            android:id="@+id/pitchForwards"
+            style="@style/ControlButton"
+            android:layout_above="@+id/yawRight"
+            android:layout_toEndOf="@+id/altitudeClimb" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="↙"
+            android:id="@+id/pitchBackwards"
+            style="@style/ControlButton"
+            android:layout_below="@+id/yawLeft"
+            android:layout_toStartOf="@+id/altitudeDescend" />
+
+    </RelativeLayout>
+
+</android.support.wearable.view.BoxInsetLayout>
