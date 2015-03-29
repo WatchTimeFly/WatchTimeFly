@@ -9,10 +9,15 @@
     </style>
 
     <style name="KillButton" parent="ControlButton">
-        <item name="android:layout_width">50dp</item>
-        <item name="android:layout_height">50dp</item>
-        <item name="android:radius">10dp</item>
         <item name="android:background">@drawable/round_kill_button</item>
+    </style>
+
+    <style name="LandButton" parent="ControlButton">
+        <item name="android:background">@drawable/round_land_button</item>
+    </style>
+
+    <style name="TakeoffButton" parent="ControlButton">
+        <item name="android:background">@drawable/round_takeoff_button</item>
     </style>
 
 </resources>
