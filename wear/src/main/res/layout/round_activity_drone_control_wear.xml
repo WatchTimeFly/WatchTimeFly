@@ -27,9 +27,9 @@
             android:text="↶"
             android:id="@+id/yawLeft"
             android:layout_gravity="left|center_vertical"
-            android:layout_centerVertical="true"
-            android:layout_alignParentStart="false"
-            style="@style/ControlButton" />
+            style="@style/ControlButton"
+            android:layout_below="@+id/kill"
+            android:layout_toStartOf="@+id/kill" />
 
         <Button
             android:layout_width="50dp"
@@ -37,18 +37,10 @@
             android:text="↷"
             android:id="@+id/yawRight"
             android:layout_gravity="left|center_vertical"
-            android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true"
-            style="@style/ControlButton" />
-
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:text="↟"
-            android:id="@+id/altitudeClimb"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            style="@style/ControlButton" />
+            style="@style/ControlButton"
+            android:layout_alignBaseline="@+id/yawLeft"
+            android:layout_alignBottom="@+id/yawLeft"
+            android:layout_toEndOf="@+id/kill" />
 
         <Button
             android:layout_width="50dp"
@@ -57,7 +49,7 @@
             android:id="@+id/altitudeDescend"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            style="@style/ControlButton" />
+            style="@style/LandButton" />
 
         <Button
             android:layout_width="50dp"
@@ -65,8 +57,8 @@
             android:text="↗"
             android:id="@+id/pitchForwards"
             style="@style/ControlButton"
-            android:layout_above="@+id/yawRight"
-            android:layout_toEndOf="@+id/altitudeClimb" />
+            android:layout_alignTop="@+id/pitchBackwards"
+            android:layout_toEndOf="@+id/kill" />
 
         <Button
             android:layout_width="50dp"
@@ -74,26 +66,17 @@
             android:text="↙"
             android:id="@+id/pitchBackwards"
             style="@style/ControlButton"
-            android:layout_below="@+id/yawLeft"
-            android:layout_toStartOf="@+id/altitudeDescend" />
+            android:layout_above="@+id/kill"
+            android:layout_toStartOf="@+id/kill" />
 
         <Button
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="↥"
-            android:id="@+id/takeoff"
+            android:text="↟"
+            android:id="@+id/altitudeAscend"
             style="@style/TakeoffButton"
-            android:layout_above="@+id/yawLeft"
-            android:layout_toStartOf="@+id/altitudeClimb" />
-
-        <Button
-            style="@style/LandButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:text="↧"
-            android:id="@+id/land"
-            android:layout_below="@+id/yawRight"
-            android:layout_toEndOf="@+id/altitudeDescend" />
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/pitchForwards" />
 
     </RelativeLayout>
 
