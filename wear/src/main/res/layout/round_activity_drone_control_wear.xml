@@ -1,101 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.wearable.view.BoxInsetLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#333"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".DroneControlWear"
+    tools:deviceIds="wear_round">
 
-
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/">
-
-        <Button
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:text="↮"
-            android:id="@+id/kill"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"
-            style="@style/KillButton" />
-
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:text="↶"
-            android:id="@+id/yawLeft"
-            android:layout_gravity="left|center_vertical"
-            style="@style/ControlButton"
-            android:layout_below="@+id/kill"
-            android:layout_toStartOf="@+id/kill" />
-
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:text="↷"
-            android:id="@+id/yawRight"
-            android:layout_gravity="left|center_vertical"
-            style="@style/ControlButton"
-            android:layout_alignBaseline="@+id/yawLeft"
-            android:layout_alignBottom="@+id/yawLeft"
-            android:layout_toEndOf="@+id/kill" />
-
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:text="↧"
-            android:id="@+id/land"
-            style="@style/LandButton"
-            android:layout_above="@+id/yawLeft"
-            android:layout_alignParentStart="true" />
-
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:text="↗"
-            android:id="@+id/pitchForwards"
-            style="@style/ControlButton"
-            android:layout_alignTop="@+id/pitchBackwards"
-            android:layout_toEndOf="@+id/kill" />
-
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:text="↙"
-            android:id="@+id/pitchBackwards"
-            style="@style/ControlButton"
-            android:layout_above="@+id/kill"
-            android:layout_toStartOf="@+id/kill" />
-
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:text="↥"
-            android:id="@+id/takeoff"
-            style="@style/TakeoffButton"
-            android:layout_centerVertical="true"
-            android:layout_alignParentEnd="true" />
-
-        <Button
-            style="@style/ControlButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:text="↟"
-            android:id="@+id/altitudeAscend"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
-
-        <Button
-            style="@style/ControlButton"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:text="↡"
-            android:id="@+id/altitudeDescend"
-            android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/altitudeAscend" />
-
-    </RelativeLayout>
-
-</android.support.wearable.view.BoxInsetLayout>
+    <TextView android:id="@+id/text" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" android:text="@string/hello_round" />
+</RelativeLayout>
